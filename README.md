@@ -10,3 +10,22 @@ a Demo for Java EE / JSF / EJB / JPA (其实是《软构件与中间件技术》
 
 ## 截图
 请见 `Book` 文件夹的 `screenshots` 文件夹。
+
+1. 登录
+![Login登录](Book/screenshots/01Login登录.png)
+2. AddBookForm添加图书表单
+![02AddBookForm添加图书表单](Book/screenshots/02AddBookForm添加图书表单.png)
+3. AddBookFormValidator添加图书表单校验
+![03AddBookFormValidator添加图书表单校验](Book/screenshots/03AddBookFormValidator添加图书表单校验.png)
+4. 确认信息
+![04确认信息](Book/screenshots/04确认信息.png)
+5. 临时会话列表
+![05临时会话列表](Book/screenshots/05临时会话列表.png)
+6. AddListToDB添加临时列表到数据库
+![06AddListToDB添加临时列表到数据库](Book/screenshots/06AddListToDB添加临时列表到数据库.png)
+7. LOG控制台及文件日志
+![07LOG控制台及文件日志](Book/screenshots/07LOG控制台及文件日志.png)
+8. Saved数据库中已保存
+![08Saved数据库中已保存](Book/screenshots/08Saved数据库中已保存.png)
+9. 项目结构
+![09项目结构](Book/screenshots/09项目结构.png)
