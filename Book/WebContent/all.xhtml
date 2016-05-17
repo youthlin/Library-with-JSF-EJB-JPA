@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="dist/css/bootstrap.min.css" />
+	<script type="text/javascript" src="dist/js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
+	<title>所有图书</title>
+</h:head>
+<body>
+	<div class="container well mycenter">
+		<div class="table-responsive">
+			<h:form>
+				<div class="pull-right" style="margin: 1%;"
+					title="您登录了#{adminBean.count}次">
+					欢迎您，#{adminBean.username}。
+					<h:commandLink action="#{adminBean.logout}" value="退出"
+						immediate="true" />
+				</div>
+			</h:form>
+			<h3>所有图书</h3>
+			<h:dataTable value="#{bookBean.allBookList}" var="item"
+				styleClass="table table-hover">
+				<h:column>
+					<f:facet name="header">图书名称</f:facet>
+				#{item.name}
+				</h:column>
+				<h:column>
+					<f:facet name="header">图书书号</f:facet>
+				#{item.isbn}
+				</h:column>
+				<h:column>
+					<f:facet name="header">图书作者</f:facet>
+				#{item.author}
+				</h:column>
+				<h:column>
+					<f:facet name="header">出版时间</f:facet>
+				#{item.publishDate}
+				</h:column>
+				<h:column>
+					<f:facet name="header">图书价格</f:facet>
+				#{item.price}
+				</h:column>
+				<h:column>
+					<f:facet name="header">图书分类</f:facet>
+				#{item.type}
+				</h:column>
+				<h:column>
+					<f:facet name="header">二级分类</f:facet>
+				#{item.subType}
+				</h:column>
+			</h:dataTable>
+		</div>
+		<a href="index.xhtml" title="回到首页" class="btn btn-primary pull-left">回到首页</a>
+		<h:form>
+			<h:commandLink styleClass="btn btn-danger pull-right"
+				action="#{bookBean.clearAll}">清空所有</h:commandLink>
+		</h:form>
+	</div>
+</body>
+</html>

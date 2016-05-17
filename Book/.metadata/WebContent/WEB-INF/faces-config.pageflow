@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14633627920741" configfile="/Book/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" x="338" y="360" id="pf14633784720502" referenceLink="//@navigationRule.2/@navigationCase.1/@toViewId|" outlinks="pf14633784720503 pf14633784720504 pf146337847663311 pf146340933822117" inlinks="pf14633784720504 pf14633784720516 pf146340358702413" path="/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="confirm.xhtml" x="122" y="562" id="pf14633784720518" referenceLink="//@navigationRule.2/@fromViewId|" outlinks="pf14633784720519 pf14633784720516" inlinks="pf14633784720503" path="/confirm.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="added.xhtml" x="554" y="562" id="pf146337847205110" referenceLink="//@navigationRule.3/@navigationCase.1/@toViewId|" outlinks="pf146340391847816 pf146340933822118" inlinks="pf14633784720519 pf146340933822117 pf146340933822118" path="/added.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="all.xhtml" x="770" y="359" id="pf146337847663312" referenceLink="//@navigationRule.4/@navigationCase.0/@toViewId|" outlinks="pf146340933822119" inlinks="pf146337847663311 pf146340391847816 pf146340933822119" path="/all.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="login.xhtml" x="122" y="178" id="pf146340358702414" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" outlinks="pf146340358702413 pf146340358702415" inlinks="pf146340358702415" path="/login.xhtml"/>
+  <links id="pf14633784720503" target="pf14633784720518" source="pf14633784720502" outcome="success" redirect="true"/>
+  <links id="pf14633784720519" target="pf146337847205110" source="pf14633784720518" outcome="list" redirect="true"/>
+  <links id="pf14633784720516" target="pf14633784720502" source="pf14633784720518" outcome="error" redirect="true"/>
+  <links id="pf146337847663311" target="pf146337847663312" source="pf14633784720502" outcome="all" redirect="true"/>
+  <links id="pf146340358702413" target="pf14633784720502" source="pf146340358702414" outcome="success" redirect="true"/>
+  <links id="pf146340391847816" target="pf146337847663312" source="pf146337847205110" outcome="all" redirect="true"/>
+  <links id="pf146340933822117" target="pf146337847205110" source="pf14633784720502" outcome="list" redirect="true"/>
+  <links id="pf14633784720504" target="pf14633784720502" source="pf14633784720502" outcome="input">
+    <bendPoints d1Height="-36" d2Height="-36"/>
+    <bendPoints d1Width="-64" d1Height="-36" d2Width="-64" d2Height="-36"/>
+    <bendPoints d1Width="-64" d2Width="-64"/>
+  </links>
+  <links id="pf146340358702415" target="pf146340358702414" source="pf146340358702414" outcome="login">
+    <bendPoints d1Height="-36" d2Height="-36"/>
+    <bendPoints d1Width="-64" d1Height="-36" d2Width="-64" d2Height="-36"/>
+    <bendPoints d1Width="-64" d2Width="-64"/>
+  </links>
+  <links id="pf146340933822118" target="pf146337847205110" source="pf146337847205110" outcome="list">
+    <bendPoints d1Height="-36" d2Height="-36"/>
+    <bendPoints d1Width="-64" d1Height="-36" d2Width="-64" d2Height="-36"/>
+    <bendPoints d1Width="-64" d2Width="-64"/>
+  </links>
+  <links id="pf146340933822119" target="pf146337847663312" source="pf146337847663312" outcome="success">
+    <bendPoints d1Height="-36" d2Height="-36"/>
+    <bendPoints d1Width="-64" d1Height="-36" d2Width="-64" d2Height="-36"/>
+    <bendPoints d1Width="-64" d2Width="-64"/>
+  </links>
+</pageflow:Pageflow>

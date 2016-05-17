@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core">
+<head>
+<meta name="viewport" content="width=device-width" />
+<link rel="stylesheet" href="dist/css/bootstrap.min.css" />
+<script type="text/javascript" src="dist/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
+<title>确认添加</title>
+</head>
+<body>
+	<div class="container mycenter">
+		<h:form>
+			<div class="pull-right" style="margin: 1%;"
+				title="您登录了#{adminBean.count}次">
+				欢迎您，#{adminBean.username}。
+				<h:commandLink action="#{adminBean.logout}" value="退出"
+					immediate="true" />
+			</div>
+		</h:form>
+		<h:form styleClass="form-horizontal well" id="confirm-add-book-form">
+			<h3 class="col-sm-offset-1">确认图书信息</h3>
+			<div class="form-group">
+				<h:outputLabel styleClass="col-sm-2 control-label">图书名称</h:outputLabel>
+				<div class="col-sm-10">
+					<p class="form-control-static">
+						<h:outputText value="#{bookBean.name}" />
+					</p>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<h:outputLabel styleClass="col-sm-2 control-label">图书书号</h:outputLabel>
+				<div class="col-sm-10">
+					<p class="form-control-static">
+						<h:outputText value="#{bookBean.isbn}" />
+					</p>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<h:outputLabel styleClass="col-sm-2 control-label">图书作者</h:outputLabel>
+				<div class="col-sm-10">
+					<p class="form-control-static">
+						<h:outputText value="#{bookBean.author}" />
+					</p>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<h:outputLabel styleClass="col-sm-2 control-label">出版时间</h:outputLabel>
+				<div class="col-sm-10">
+					<p class="form-control-static">
+						<h:outputText value="#{bookBean.publishDate}">
+							<f:convertDateTime pattern="YYYY年mm月" />
+						</h:outputText>
+					</p>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<h:outputLabel styleClass="col-sm-2 control-label">图书价格</h:outputLabel>
+				<div class="col-sm-10">
+					<p class="form-control-static">
+						￥
+						<h:outputText value="#{bookBean.price}" />
+					</p>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<h:outputLabel styleClass="col-sm-2 control-label">图书分类</h:outputLabel>
+				<div class="col-sm-10">
+					<p class="form-control-static">
+						<h:outputText value="#{bookBean.typeName}" />
+					</p>
+				</div>
+			</div>
+			<div class="form-group">
+				<h:outputLabel styleClass="col-sm-2 control-label">二级分类</h:outputLabel>
+				<div class="col-sm-10">
+					<p class="form-control-static">
+						<h:outputText value="#{bookBean.subTypeName}" />
+					</p>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-2">
+					<h:commandButton value="&lt;&lt;返回修改" styleClass="btn btn-primary"
+						style="margin-bottom: 15px" action="index?faces-redirect=true" />
+				</div>
+				<div class="col-sm-2">
+					<h:commandButton value="下一步&gt;&gt;" styleClass="btn btn-primary"
+						style="margin-bottom: 15px" action="#{bookBean.confirm}" />
+				</div>
+			</div>
+		</h:form>
+	</div>
+</body>
+</html>

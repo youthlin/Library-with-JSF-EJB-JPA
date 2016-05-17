@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="dist/css/bootstrap.min.css" />
+	<script type="text/javascript" src="dist/js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
+	<title>添加图书</title>
+</h:head>
+<body onload="document.charset='UTF-8';">
+	<div class="container mycenter">
+		<h:form>
+			<div class="pull-right" style="margin: 1%;"
+				title="您登录了#{adminBean.count}次">
+				欢迎您，#{adminBean.username}。
+				<h:commandLink action="#{adminBean.logout}" value="退出"
+					immediate="true" />
+			</div>
+		</h:form>
+
+		<h:form styleClass="form-horizontal well" id="add-book-form">
+
+			<h3 class="col-sm-offset-1">添加图书</h3>
+
+			<div class="form-group" title="图书名称：必填">
+				<h:outputLabel styleClass="col-sm-2 control-label" for="book-name">图书名称 *</h:outputLabel>
+				<div class="col-sm-10">
+					<h:inputText id="book-name" styleClass="form-control"
+						value="#{bookBean.name}" rendered="true"
+						validator="#{bookBean.requiredValidator}" />
+					<h:message for="book-name" styleClass="text-danger" />
+				</div>
+			</div>
+
+			<div class="form-group" title="ISBN: 必填，连字符可输入可不输入">
+				<h:outputLabel styleClass="col-sm-2 control-label" for="book-isbn">图书书号 *</h:outputLabel>
+				<div class="col-sm-10">
+					<h:inputText id="book-isbn" styleClass="form-control"
+						value="#{bookBean.isbn}" validator="#{bookBean.isbnValidator}" />
+					<h:message styleClass="text-danger" for="book-isbn" />
+				</div>
+			</div>
+
+			<div class="form-group" title="作者:必填，如有多个作者请用半角逗号分隔">
+				<h:outputLabel styleClass="col-sm-2 control-label" for="book-author"
+					title="如有多个作者，请用逗号分隔">图书作者 *</h:outputLabel>
+				<div class="col-sm-10" title="如有多个作者，请用逗号分隔">
+					<h:inputText id="book-author" styleClass="form-control"
+						value="#{bookBean.author}" required="true">
+						<f:converter converterId="com.youthlin.javaee.jsf.AuthorConverter" />
+					</h:inputText>
+					<h:message styleClass="text-danger" for="book-author" />
+				</div>
+			</div>
+
+			<div class="form-group" title="出版时间：必填，YYYY-mm格式">
+				<h:outputLabel styleClass="col-sm-2 control-label"
+					for="book-publish-date">出版时间 *</h:outputLabel>
+				<div class="col-sm-10">
+					<h:inputText id="book-publish-date" styleClass="form-control"
+						value="#{bookBean.publishDate}" required="true">
+						<f:convertDateTime pattern="YYYY-mm" />
+					</h:inputText>
+					<h:message styleClass="text-danger" for="book-publish-date" />
+				</div>
+			</div>
+
+			<div class="form-group" title="价格：必填，一位小数或整数">
+				<h:outputLabel styleClass="col-sm-2 control-label" for="book-price">图书价格 *</h:outputLabel>
+				<div class="col-sm-10">
+					<h:inputText id="book-price" styleClass="form-control"
+						value="#{bookBean.price}" required="true" />
+					<h:message styleClass="text-danger" for="book-price" />
+				</div>
+			</div>
+
+			<div class="form-group" title="分类：必填，请从下拉列表选择">
+				<h:outputLabel styleClass="col-sm-2 control-label" for="book-type">图书分类 *</h:outputLabel>
+				<div class="col-sm-10">
+
+					<h:selectOneMenu id="book-type" styleClass="form-control"
+						value="#{bookBean.type}" validator="#{bookBean.typeValidator}"
+						valueChangeListener="#{bookBean.onTypesChange}">
+						<f:selectItems value="#{bookBean.types}" />
+						<f:ajax event="change" render="book-sub-type" immediate="true" />
+					</h:selectOneMenu>
+					<!--JSF 2 简介，第 3 部分: 事件处理、JavaScript 和 Ajax:
+                    http://www.ibm.com/developerworks/cn/java/j-jsf2fu3/#listing7
+                    	需要去掉h:selectMenu的onchange=this.form.submit()-->
+					<h:message styleClass="text-danger" for="book-type" />
+				</div>
+			</div>
+
+			<div class="form-group" title="二级分类：请从下拉列表选择">
+				<h:outputLabel styleClass="col-sm-2 control-label"
+					for="book-sub-type">二级分类 &nbsp;</h:outputLabel>
+				<div class="col-sm-10">
+					<h:selectOneMenu id="book-sub-type" styleClass="form-control"
+						value="#{bookBean.subType}">
+						<f:selectItems value="#{bookBean.subTypes}" />
+					</h:selectOneMenu>
+					<h:message styleClass="text-danger" for="book-sub-type" />
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="col-sm-offset-1 col-sm-1 pull-left"
+					style="margin-bottom: 1%;">
+					<!-- 字段太多jquey快速清空表单内容方法 http://www.jb51.net/article/54144.htm -->
+					<a class="btn btn-info"
+						href="javascript:$(':input','#add-book-form').not(':button, :submit, :reset, :hidden').val('').removeAttr('checked').removeAttr('selected');;">重置</a>
+				</div>
+				<div class="col-sm-offset-1 col-sm-1">
+					<h:commandButton value="提交" styleClass="btn btn-primary"
+						action="#{bookBean.addBook}" />
+				</div>
+				<div class="col-sm-offset-1 col-sm-1">
+					<h:commandButton value="查看当前列表图书" styleClass="btn btn-success"
+						action="#{bookBean.viewList}" immediate="true" />
+				</div>
+				<div class="col-sm-offset-1 col-sm-1">
+					<h:commandButton value="查看所有图书" styleClass="btn btn-success"
+						action="#{bookBean.viewAllBook}" immediate="true" />
+				</div>
+			</div>
+		</h:form>
+	</div>
+	<script type="javascript">
+	function clear(){
+		$(':input','#add-book-form')
+		.not(':button, :submit, :reset, :hidden')
+		.val('')
+		.removeAttr('checked')
+		.removeAttr('selected');
+	}
+</script>
+</body>
+</html>
