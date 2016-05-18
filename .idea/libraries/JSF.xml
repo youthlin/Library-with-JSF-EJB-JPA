@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="JSF" type="jsf">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../libraries/JSF 2.2 (Mojarra 2.2.0)/mojarra-2.2.0-FCS/lib/javax.faces.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
