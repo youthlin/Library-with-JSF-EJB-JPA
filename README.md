@@ -1,7 +1,8 @@
 # Library-with-JSF-EJB-JPA
 a Demo for Java EE / JSF / EJB / JPA (其实是《软构件与中间件技术》课程的实验)  
 
-原来是 Eclipse + JBoss7.1 + JDK7 现已迁移到 IDEA + WildFly10 + JDK8  
+原来是 Eclipse + JBoss7.1 + JDK7(见 `first-version-with-eclipse` 分支), 
+现已迁移到 IDEA + WildFly10 + JDK8  
 
 ## 需求
 见 [题目.txt](题目.txt)  
