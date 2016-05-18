@@ -2,82 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f50e10f-f804-488f-9c84-906c36993c94" name="Default" comment="迁移到IDEA">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.annotation.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.jms.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.persistence.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.resource.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.transaction.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jboss-client.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/log4j-api-2.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/log4j-core-2.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/log4j-web-2.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/dist/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/dist/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/dist/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/dist/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/BookEJB_ejb_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Book_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/EJB.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/JPA_2_1_JPA_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/JSF.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Book.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BookEJB/BookEJB.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BookEJB/META-INF/ejb-jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BookEJB/META-INF/persistence.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BookEJB/src/com/youthlin/javaee/beans/Book.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BookEJB/src/com/youthlin/javaee/ejb/AllBook.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BookEJB/src/com/youthlin/javaee/ejb/AllBookRemote.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BookEJB/src/com/youthlin/javaee/ejb/BookList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BookEJB/src/com/youthlin/javaee/ejb/BookListRemote.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BookEJB/src/com/youthlin/javaee/ejb/LoginCount.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BookEJB/src/com/youthlin/javaee/ejb/LoginCountRemote.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BookEJB/src/com/youthlin/javaee/ejb/ViewBook.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BookEJB/src/com/youthlin/javaee/ejb/ViewBookRemote.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/admin.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/youthlin/javaee/ejb/AllBookRemote.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/youthlin/javaee/ejb/BookListRemote.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/youthlin/javaee/ejb/LoginCountRemote.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/youthlin/javaee/ejb/TestClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/youthlin/javaee/ejb/ViewBookRemote.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/youthlin/javaee/jsf/AdminBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/youthlin/javaee/jsf/AuthorConverter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/youthlin/javaee/jsf/BookBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/youthlin/javaee/jsf/BookUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/youthlin/javaee/jsf/MyLog.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/youthlin/javaee/jsf/SUBTYPE.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/youthlin/javaee/jsf/TYPE.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/youthlin/javaee/jsf/filter/LoginCheckFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/youthlin/javaee/jsf/filter/SetCharacterEncodingFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jboss-ejb-client.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/log4j2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/faces-config.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/added.xhtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/all.xhtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/confirm.xhtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/dist/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/dist/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/dist/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/dist/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/dist/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/dist/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/dist/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/dist/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/dist/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/dist/js/jquery-2.1.4.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/index.xhtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/login.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Book.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -112,18 +38,7 @@
     <favorites_list name="Book" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="dataSources.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/dataSources.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -159,6 +74,7 @@
         <option value="$PROJECT_DIR$/web/confirm.xhtml" />
         <option value="$PROJECT_DIR$/BookEJB/src/com/youthlin/javaee/ejb/BookList.java" />
         <option value="$PROJECT_DIR$/BookEJB/src/com/youthlin/javaee/ejb/AllBook.java" />
+        <option value="$PROJECT_DIR$/.idea/dataSources.xml" />
       </list>
     </option>
   </component>
@@ -215,6 +131,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Book" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Book" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Book" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -740,12 +666,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1463567788208</updated>
-      <workItem from="1463567794153" duration="9445000" />
+      <workItem from="1463567794153" duration="9521000" />
     </task>
+    <task id="LOCAL-00001" summary="迁移到IDEA">
+      <created>1463582152601</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1463582152601</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9445000" />
+    <option name="totallyTimeSpent" value="9521000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1149,6 +1083,14 @@
             <element signature="method#setType#0;class#BookBean#0" expanded="false" />
             <element signature="method#setSubType#0;class#BookBean#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1320">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
