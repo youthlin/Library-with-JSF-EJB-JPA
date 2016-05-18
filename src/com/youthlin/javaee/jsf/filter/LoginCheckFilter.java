@@ -22,7 +22,7 @@ public class LoginCheckFilter implements Filter {
                 + "/login.xhtml";
 //		System.out.println("url=" + uri + "\nlogin path=" + loginPath);
         if (uri.equals(loginPath) || uri.endsWith(".js")
-                || uri.endsWith(".css")) {
+                || uri.endsWith(".ico") || uri.endsWith(".css")) {
             chain.doFilter(request, response);
             return;
         }

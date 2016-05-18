@@ -60,6 +60,7 @@ public class AdminBean {
             return "success";
         }
         msg = "用户名或密码错误";
+        setPassword(null);
         LOG.debug("登录失败");
         return "login";
     }

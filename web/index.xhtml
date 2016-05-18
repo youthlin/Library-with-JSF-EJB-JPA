@@ -12,6 +12,7 @@
 <h:head>
     <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" href="dist/css/bootstrap.min.css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
     <script type="text/javascript" src="dist/js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
     <title>添加图书</title>
@@ -20,7 +21,7 @@
 <div class="container mycenter">
     <h:form>
         <div class="pull-right" style="margin: 1%;" title="您登录了#{adminBean.count}次">
-            欢迎您，#{adminBean.username}。
+            欢迎您，<h:outputText value="#{adminBean.username}"/>。
             <h:commandLink action="#{adminBean.logout}" value="退出" immediate="true"/>
         </div>
     </h:form>
